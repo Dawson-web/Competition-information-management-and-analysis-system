@@ -1,11 +1,12 @@
 import {
+  LogoutOutlined,
   MenuFoldOutlined,
   MenuUnfoldOutlined,
   UploadOutlined,
   UserOutlined,
   VideoCameraOutlined,
 } from "@ant-design/icons";
-import { Button, Layout, Menu, theme } from "antd";
+import { Button, Layout, Menu, Popconfirm, theme } from "antd";
 import React, { useState } from "react";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import "./index.scss";
@@ -74,6 +75,25 @@ const App = () => {
               height: 64,
             }}
           />
+
+          <Button
+            type="text"
+            style={{
+              fontSize: "15px",
+              width: 100,
+              height: 64,
+            }}
+            className="logout-button"
+          >
+            <Popconfirm
+              title="是否确认退出？"
+              okText="退出"
+              cancelText="取消"
+              // onConfirm={onConfirm}
+            >
+              <LogoutOutlined /> 退出
+            </Popconfirm>
+          </Button>
         </Header>
         <Content
           style={{

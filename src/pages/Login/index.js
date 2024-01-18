@@ -2,7 +2,6 @@ import { Button, Card, Form, Input, message } from "antd";
 import React from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { fetchLogin } from "../../store/modules/user";
 import "./index.scss";
 
 const Login = () => {
@@ -10,7 +9,7 @@ const Login = () => {
   const navigate = useNavigate();
   const onFinish = async (values) => {
     console.log("登录", values);
-    await dispatch(fetchLogin(values));
+    // await dispatch(fetchLogin(values));
     navigate("/");
     message.success("登录成功");
   };
