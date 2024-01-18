@@ -1,0 +1,1 @@
+# Competition-information-management-and-analysis-system
