@@ -44,7 +44,7 @@ const Login = () => {
                 登录
               </Button>
               <span
-                className="jump-singup"
+                className="singup-jump"
                 onClick={() => navigate("/register")}
               >
                 没有账号？现在去注册

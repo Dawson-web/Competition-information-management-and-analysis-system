@@ -53,7 +53,7 @@ const Teacher = () => {
   return (
     <Layout className="ant-layout">
       <Sider trigger={null} collapsible collapsed={collapsed} theme="light">
-        <div className="demo-logo-vertical" />
+        <div className="demo-logo-vertical2" />
         <Menu
           mode="inline"
           theme="light"

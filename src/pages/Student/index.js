@@ -14,7 +14,7 @@ const { Header, Sider, Content } = Layout;
 const items = [
   {
     label: "个人信息",
-    key: "/student/admin",
+    key: "/",
     icon: <UserOutlined />,
   },
   {
@@ -48,7 +48,7 @@ const Student = () => {
   return (
     <Layout className="ant-layout">
       <Sider trigger={null} collapsible collapsed={collapsed} theme="light">
-        <div className="demo-logo-vertical" />
+        <div className="demo-logo-vertical1" />
         <Menu
           mode="inline"
           theme="light"

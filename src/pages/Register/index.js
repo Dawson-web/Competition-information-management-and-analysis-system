@@ -45,7 +45,7 @@ const Register = () => {
                 登录
               </Button>
               <span
-                className="jump-register"
+                className="register-jump"
                 onClick={() => navigate("/login")}
               >
                 已有账号？现在去登录
