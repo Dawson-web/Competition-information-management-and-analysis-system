@@ -13,24 +13,29 @@ import "./index.scss";
 const { Header, Sider, Content } = Layout;
 const items = [
   {
-    label: "首页",
+    label: "个人信息",
     key: "/",
     icon: <UserOutlined />,
   },
   {
-    label: "竞赛",
+    label: "竞赛信息",
     key: "/1",
     icon: <UploadOutlined />,
   },
   {
-    label: "分析",
+    label: "学生管理",
     key: "/2",
+    icon: <VideoCameraOutlined />,
+  },
+  {
+    label: "参赛情况",
+    key: "/3",
     icon: <VideoCameraOutlined />,
   },
 ];
 // 反向高亮
 
-const App = () => {
+const Teacher = () => {
   const navigate = useNavigate();
 
   const location = useLocation();
@@ -82,8 +87,8 @@ const App = () => {
               fontSize: "15px",
               width: 100,
               height: 64,
+              float: "right",
             }}
-            className="logout-button"
           >
             <Popconfirm
               title="是否确认退出？"
@@ -111,4 +116,4 @@ const App = () => {
     </Layout>
   );
 };
-export default App;
+export default Teacher;
