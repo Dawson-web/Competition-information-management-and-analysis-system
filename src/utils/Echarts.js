@@ -1,7 +1,7 @@
 import * as echarts from "echarts";
 
 const Echarts = {
-  SetOption: function (data, title, race) {
+  SetOption: function (data, title, race, xdata) {
     let option = {
       title: {
         text: title || "",
@@ -12,10 +12,16 @@ const Echarts = {
       legend: {
         data: race,
       },
+      grid: {
+        left: "3%",
+        right: "4%",
+        bottom: "3%",
+        containLabel: true,
+      },
       xAxis: {
         type: "category",
         boundaryGap: false,
-        data: ["M", "T", "W", "F", "S"],
+        data: xdata || ["M", "T", "W", "F", "S"],
       },
       yAxis: {
         type: "value",
