@@ -3,6 +3,7 @@ import Admin from "../pages/Admin";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Student from "../pages/Student";
+import Transcripts from "../pages/Student/components/Transcripts";
 import Teacher from "../pages/Teacher";
 
 const router = createBrowserRouter([
@@ -11,8 +12,8 @@ const router = createBrowserRouter([
     element: <Student />,
     children: [
       {
-        path: "/student/admin",
-        element: <Admin />,
+        path: "/student/",
+        element: <Transcripts />,
       },
     ],
   },
