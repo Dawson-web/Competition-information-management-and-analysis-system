@@ -1,4 +1,4 @@
-import Chart from "../../../utils/charts";
+import Echarts from "../../../utils/Echarts";
 const Transcripts = () => {
   return (
     <>
@@ -40,8 +40,8 @@ setTimeout(() => {
     },
   ];
   let race = ["Email", "Union Ads", "Video Ads", "Direct", "Search Engine"];
-  let option = Chart.SetOption(data, "grade", race);
-  Chart.InitChart(option, "main");
+  let option = Echarts.SetOption(data, "grade", race);
+  Echarts.InitChart(option, "main");
 }, 1000);
 
 export default Transcripts;

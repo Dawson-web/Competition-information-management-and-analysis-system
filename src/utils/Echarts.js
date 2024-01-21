@@ -1,6 +1,6 @@
 import * as echarts from "echarts";
 
-const Chart = {
+const Echarts = {
   SetOption: function (data, title, race) {
     let option = {
       title: {
@@ -30,4 +30,4 @@ const Chart = {
     mychart.setOption(option);
   },
 };
-export default Chart;
+export default Echarts;
